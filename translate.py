@@ -78,9 +78,9 @@ def get_reverse(sequence):
     'CGTA'
     """
     if sequence != "":
-        rev_seq=sequence.upper()
-        rev_seq=rev_seq[::-1]
-        return rev_seq
+        seq_upper=sequence.upper()
+        sequence_reversed=seq_upper[::-1]
+        return sequence_reversed
     else:
         return ''
     pass
@@ -101,6 +101,15 @@ def get_complement(sequence):
     >>> get_reverse('ATGC')
     'TACG'
     """
+    if sequence != "":
+        seq_upper=sequence.upper()
+        comp_seq= []
+        complement={'A': 'U', 'C': 'G', 'U': 'A', 'G': 'C'}
+        for i in seq_upper:
+            comp_seq.append(complement[i])
+        return ''.join(comp_seq)
+    else:
+        return ''
     pass
 
 def reverse_and_complement(sequence):
