@@ -206,7 +206,7 @@ def find_first_orf(sequence,
     # is a valid regular expression, but it will only match 'AUGGUAUAA'
     # exactly. Change `orf_pattern_str` so that it will match any open reading
     # frame.
-    # Read the docstring above for additional clues.
+    # Read the docstring above for additional clues
     orf_pattern_str = r'AUGGUAUAA'
     ##########################################################################
 
